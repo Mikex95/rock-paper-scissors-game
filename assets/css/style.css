@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #494D5F;
+    color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+p {
+    font-size: 36px;
+}
+
+span {
+    font-size: 36px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.scoreboard {
+    border: white 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: 20px auto;
+    height: 100px;
+    position: relative;
+}
+
+#user {
+    position: absolute;
+    background-color: rgb(0, 161, 54);
+    top: 30px;
+    left: -25px;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#comp {
+    position: absolute;
+    background-color: red;
+    top: 30px;
+    right: -30px;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.emojis-container {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    border: 2px white solid;
+    border-radius: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+img:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+.your-move {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.bn31 {
+    background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #ffffff;
+    height: 50px;
+    font-size: 1.4em;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 10em;
+    z-index: 2;
+}
+
+.bn31:hover {
+    color: #fff;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: #0e0e10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+    font-size: 30px;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }
