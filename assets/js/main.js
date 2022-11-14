@@ -69,7 +69,9 @@ scissors.addEventListener('click', function () {
     }
 })
 
-restartButton.addEventListener('click', function() {
-    window.location.reload();
+restartButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    compScoreOutput.innerHTML = counterComp = 0;
+    userScoreOutput.innerHTML = counterUser = 0;
     output.innerHTML = "choose your next move";
 })
