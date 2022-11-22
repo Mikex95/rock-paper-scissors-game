@@ -45,10 +45,9 @@ paper.addEventListener('click', function () {
         output.innerHTML = "Draw! Try it again"
     } else if (x == 2) {
         movesOutput.innerHTML = "Computer choose scissors"
-        output.innerHTML = "Paper get sliced by scissors, you loose";
-        userScoreOutput.innerHTML = counterUser++
+        compScoreOutput.innerHTML = counterComp++
+        output.innerHTML = "Paper get sliced by scissors, you loose"; 
     }
-
 })
 
 scissors.addEventListener('click', function () {
@@ -62,10 +61,10 @@ scissors.addEventListener('click', function () {
     } else if (x == 1){
         movesOutput.innerHTML = "Computer choose paper"
         output.innerHTML = "Scissors cuts paper, you win!";
+        userScoreOutput.innerHTML = counterUser++
     } else if (x == 2) {
         movesOutput.innerHTML = "Computer choose scissors"
         output.innerHTML = "Draw! Try it again";
-        userScoreOutput.innerHTML = counterUser++
     }
 })
 
@@ -73,5 +72,7 @@ restartButton.addEventListener('click', function(event) {
     event.preventDefault();
     compScoreOutput.innerHTML = counterComp = 0;
     userScoreOutput.innerHTML = counterUser = 0;
+    counterUser = 1
+    counterComp = 1
     output.innerHTML = "choose your next move";
 })
